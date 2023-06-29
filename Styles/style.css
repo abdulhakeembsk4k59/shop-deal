@@ -111,7 +111,7 @@ Featured Products
   background-color: #EFEFEF;
 }
 .slide-container{
-  max-width: 1120px;
+  /* max-width: 1120px; */
   width: 100%;
   background-color: gray;
   padding: 40px;
@@ -123,7 +123,7 @@ Featured Products
 
 }
 .card{
-  width: 320px;
+  width: 290px;
   border-radius: 25px !important;
   background-color: #FFF;
   /* border-radius: 25px !important; */
@@ -166,7 +166,7 @@ Featured Products
 .card-image{
   position: relative;
   height: 300px;
-  width: 230px;
+  width: 220px;
   background: #FFF;
   padding: 3px;
   border-radius: 52px;
@@ -207,71 +207,67 @@ Featured Products
 
 
 
-
-
 /* 1000 screen */
-@media only screen and (max-width: 1000px) {
-  .cover-content {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .shop-now{
-    font-size: 3vw !important;
-    border-top-left-radius: 30px !important;
-    border-bottom-right-radius: 30px!important;
-  }
-  #f-shop{
-    font-size: 2vw !important;
-    padding-left: 3px;
-  }
-
-  #logo-container2 {
-    position: relative;
-    width: 100%;
-    height: 15vw ;
-    /* background-color: #ff6600; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    overflow: hidden;
-    margin-bottom: 0px;
-  }
-  .logo-letter2 {
-    position: relative;
-    font-family: 'Kablammo', cursive;
-    font-size: 7vw;
-    font-weight: bold;
-    color: white;
-    animation: letter-bounce 1s ease-in-out infinite alternate;
-    text-shadow: 2px 2px 4px rgb(228, 189, 80);
-  /* margin-bottom: 20px; */
-  }
-  .slogan {
-    position: relative;
-    bottom: 20px;
-    font-family: 'Pacifico', cursive;
-    color: white;
-    font-size: 2vw;
-    text-shadow: 2px 2px 4px rgb(88, 0, 0);
-
-}
+@media only screen and (max-width: 1285px) {
 
     .cover-image {
       width: 100%;
       height: 70% !important;
       object-fit: cover;
     }
+
+    .card{
+      width: 230px;
+      border-radius: 25px !important;
+      background-color: #FFF;
+      /* border-radius: 25px !important; */
+    }
+    .card-image{
+      position: relative;
+      height: 270px;
+      width: 200px;
+      background: #FFF;
+      padding: 3px;
+      border-radius: 52px;
+    }
 }
 
 
-@media only screen and (max-width: 600px) {
+/* 1000 screen */
+@media only screen and (max-width: 1110px) {
+
+    .cover-image {
+      width: 100%;
+      height: 70% !important;
+      object-fit: cover;
+    }
+
+    .card{
+      width: 200px;
+      border-radius: 25px !important;
+      background-color: #FFF;
+      /* border-radius: 25px !important; */
+    }
+    .card-image{
+      position: relative;
+      height: 250px;
+      width: 180px;
+      background: #FFF;
+      padding: 3px;
+      border-radius: 52px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 990px) {
   .cover-content {
     position: absolute;
-    top: 79%;
+    top: 69%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -323,7 +319,172 @@ Featured Products
       height: 70% !important;
       object-fit: cover;
     }
+    .carousel-item{
+      padding: 0;
+      margin: 0;
+    }
+    .rows{
+      position: relative;
+      left: 10px;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .card{
+      width: 290px;
+      border-radius: 25px !important;
+      background-color: #FFF;
+      /* border-radius: 25px !important; */
+    }
+    .card-image{
+      position: relative;
+      height: 300px;
+      width: 200px;
+      background: #FFF;
+      padding: 3px;
+      border-radius: 52px;
+    }
 }
+
+
+
+
+@media only screen and (max-width: 750px) {
+  .cover-content {
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .shop-now{
+    font-size: 4vw !important;
+    border-top-left-radius: 30px !important;
+    border-bottom-right-radius: 30px!important;
+  }
+  #f-shop{
+    font-size: 4vw !important;
+    padding-left: 3px;
+  }
+
+  #logo-container2 {
+    position: relative;
+    width: 100%;
+    height: 18vw ;
+    /* background-color: #ff6600; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+  .logo-letter2 {
+    position: relative;
+    font-family: 'Kablammo', cursive;
+    font-size: 10vw;
+    font-weight: bold;
+    color: white;
+    animation: letter-bounce 1s ease-in-out infinite alternate;
+    text-shadow: 2px 2px 4px rgb(228, 189, 80);
+  /* margin-bottom: 20px; */
+  }
+  .slogan {
+    position: relative;
+    bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 3vw;
+    text-shadow: 2px 2px 4px rgb(88, 0, 0);
+
+}
+
+    .cover-image {
+      width: 100%;
+      height: 70% !important;
+      object-fit: cover;
+    }
+    .carousel-item{
+      padding: 0;
+      margin: 0;
+    }
+    .rows{
+      position: relative;
+      left: 100px;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 650px) {
+  .cover-content {
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .shop-now{
+    font-size: 4vw !important;
+    border-top-left-radius: 30px !important;
+    border-bottom-right-radius: 30px!important;
+  }
+  #f-shop{
+    font-size: 4vw !important;
+    padding-left: 3px;
+  }
+
+  #logo-container2 {
+    position: relative;
+    width: 100%;
+    height: 18vw ;
+    /* background-color: #ff6600; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+  .logo-letter2 {
+    position: relative;
+    font-family: 'Kablammo', cursive;
+    font-size: 10vw;
+    font-weight: bold;
+    color: white;
+    animation: letter-bounce 1s ease-in-out infinite alternate;
+    text-shadow: 2px 2px 4px rgb(228, 189, 80);
+  /* margin-bottom: 20px; */
+  }
+  .slogan {
+    position: relative;
+    bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 3vw;
+    text-shadow: 2px 2px 4px rgb(88, 0, 0);
+
+}
+
+    .cover-image {
+      width: 100%;
+      height: 70% !important;
+      object-fit: cover;
+    }
+    .carousel-item{
+      padding: 0;
+      margin: 0;
+    }
+    .rows{
+      position: relative;
+      left: 17px;
+      margin: 0 !important;
+      padding: 0%!important;
+    }
+}
+
 
 @media only screen and (max-width: 450px) {
   .cover-content {
@@ -386,10 +547,13 @@ Featured Products
     }
     .rows{
       position: relative;
-      right: 14%;
+      right: 11%;
       margin: 0 !important;
       padding: 0 !important;
     }
+    .card{
+      posintion:relative;
+      right: 56px;
+    }
 }
-
 
