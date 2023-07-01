@@ -22,27 +22,28 @@
         });
     </script> 
 </head>
-<body>
+<body class="" >
     
     <div id="header"></div>
+
         <div class="container p-5">
-        <h1 class="card-title text-center fw-bolder mb-3">Contact Us!</h1>
+        <h1 class="card-title text-center fw-bolder mb-3 p-3" >Contact Us!</h1>
             <div class="row">
                 <div class="col-lg-6 d-none d-md-none d-lg-block border-end p-5 " style="border-radius: 45px;">
-                    <img src="../images/contact/person.webp" class="img-thumbnail " style="height: 400px; float: right; margin-top: 10px;" alt="">
+                    <img src="../images/contact/person.webp" class="img-thumbnail " style="height: 400px; width: 380px; border-radius: 25px; float: right; margin-top: 10px;" alt="">
                 </div>
                 <div class="col-lg-6 p-5">
                     <form action="" style="padding-left: 0;">
                         <label for="name">Name:</label>
-                        <input class="form-control mb-2" type="text" id="name">
-                        <label for="email">E-mail:</label>
-                        <input class="form-control mb-2" type="email" id="email">
+                        <input class="form-control mb-2" type="text" id="name" placeholder="Enter your name " required>
+                        <label for="email" >E-mail:</label>
+                        <input class="form-control mb-2" type="email" id="email" placeholder="Enter your email" required>
                         <label for="phone">Phone:</label>
-                        <input class="form-control mb-2" type="number" id="phone">
+                        <input class="form-control mb-2" type="number" id="phone" placeholder="Enter your number">
 
                         <label for="message">Message:</label>
-                        <textarea class="form-control mb-5" name="" id="message" cols="30" rows="3"></textarea>
-                        <button class="btn btn-warning form-control">Submit</button>
+                        <textarea class="form-control mb-5" name="" id="message" cols="30" rows="3" placeholder="Enter your message" required></textarea>
+                        <button class="btn btn-warning form-control p-2" style="color: white; font-weight: bolder; border: 3px dotted #ffc107; border-radius: 10px;">Submit</button>
                     </form>
                 </div>
             </div>
