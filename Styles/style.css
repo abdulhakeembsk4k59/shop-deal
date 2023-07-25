@@ -267,7 +267,7 @@ Featured Products
 @media only screen and (max-width: 990px) {
   .cover-content {
     position: absolute;
-    top: 69%;
+    top: 59%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -351,7 +351,7 @@ Featured Products
 @media only screen and (max-width: 750px) {
   .cover-content {
     position: absolute;
-    top: 69%;
+    top: 59%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -421,7 +421,7 @@ Featured Products
 @media only screen and (max-width: 650px) {
   .cover-content {
     position: absolute;
-    top: 69%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -489,7 +489,7 @@ Featured Products
 @media only screen and (max-width: 450px) {
   .cover-content {
     position: absolute;
-    top: 69%;
+    top: 59%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

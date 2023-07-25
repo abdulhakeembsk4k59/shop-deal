@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shirts products</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../Styles/style.css"> -->
+    <style>
+    
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    a{
+    text-decoration: none !important;
+    }
+    /* .row{
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .card{
+        margin: 0;
+        width: 100%;
+    }
+    .image-content,
+    .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 10px;
+    }
+    .image-content{
+    row-gap: 2px;
+    position: relative;
+    /* padding: 25px 0; */
+    /* }
+    .card-image{
+    position: relative;
+    height: 320px;
+    width: 80%;
+    background: #FFF;
+    padding: 3px;
+    border-radius: 52px;
+    }
+    .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px groove #FFC107;
+    border-radius: 50px;
+    }
+    
+    .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    }
+    .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+    } */ */
+
+    .featured-products{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+    }
+    .slide-container{
+    /* max-width: 1120px; */
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    justify-content: center !important;
+    }
+    .slide-content{
+    margin: 0 40px;
+    justify-content: center !important;
+
+    }
+    .card{
+    width: 290px;
+    border-radius: 25px !important;
+    background-color: #FFF;
+    /* border-radius: 25px !important; */
+    margin-bottom: 10px;
+    }
+    .image-content,
+    .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    }
+    .image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+    }
+    .overlay{
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important ;
+    height: 100% !important;
+    width: 100% !important;
+    background-color: #ffc107 !important;
+    border-radius: 25px 25px 0 25px;
+    }
+    .overlay::before,
+    .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #FFC107;
+    }
+    .overlay::after{
+    border-radius: 0 30px 0 0;
+    background-color: #FFF;
+    }
+    .card-image{
+    position: relative;
+    height: 300px;
+    width: 220px;
+    background: #FFF;
+    padding: 3px;
+    border-radius: 52px;
+    }
+    .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 4px solid #FFC107;
+    border-radius: 50px;
+    }
+    .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    }
+    .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+    }
+    .button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #FFC107;
+    border-radius: 6px;
+    /* margin: 10px; */
+    margin-bottom: 7px;
+    transition: all 0.3s ease;
+    }
+    .button:hover{
+    background: #6d5e32;
+    }
+
+    
+    /* 1000 screen */
+    @media only screen and (max-width: 1285px) {
+
+    .cover-image {
+    width: 100%;
+    height: 70% !important;
+    object-fit: cover;
+    }
+
+    .card{
+    width: 230px;
+    border-radius: 25px !important;
+    background-color: #FFF;
+    /* border-radius: 25px !important; */
+    margin-bottom: 10px;
+
+    }
+    .card-image{
+    position: relative;
+    height: 270px;
+    width: 200px;
+    background: #FFF;
+    padding: 3px;
+    border-radius: 52px;
+    }
+    }
+
+
+    @media only screen and (max-width: 600px) {
+
+
+    .card{
+        position: relative;
+        right: 5px;
+    width: 360px;
+    border-radius: 25px !important;
+    background-color: #FFF;
+    /* border-radius: 25px !important; */
+    margin-bottom: 10px;
+
+    }
+    .card-image{
+    position: relative;
+
+    height: 370px;
+    width: 290px;
+    background: #FFF;
+    padding: 3px;
+    border-radius: 52px;
+    }
+    }
+
+    @media only screen and (max-width: 400px) {
+
+
+    .card{
+        position: relative;
+        right: 20px;
+        width: 260px;
+        border-radius: 25px !important;
+        background-color: #FFF;
+        /* border-radius: 25px !important; */
+        margin-bottom: 10px;
+    }
+    .card-image{
+    position: relative;
+    
+    height: 270px;
+    width: 200px;
+    background: #FFF;
+    padding: 3px;
+    border-radius: 52px;
+    }
+    }
+
+    </style>
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+        $("#header").load("../../components/header.html"); 
+        $("#footer").load("../../components/footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+
+    <div id="header"></div>
+
+
+
+    <!-- <div class="slide-container row">
+        <div class="slide-content">
+          <div class="card-wrapper ">
+            <div class="card ">
+              <div class="image-content">
+                <span class="overlay"></span>
+    
+                <div class="card-image">
+                  <img class="card-img" src="../images/featured_products/red_dress.webp"  alt="">
+                </div>
+              </div>
+    
+              <div class="card-content">
+                <h2 class="name">Red Dress</h2>
+                <p class="description">The lorem text the section that 
+                  contains header with having open functionality Lorem 
+                  dolor sit amet consectetur adipisicing elit.
+                </p>
+    
+                <button class="button"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+      <div class="slide-container">
+          <h1 class="text-center mb-4 fw-bold">Shirts</h1>
+        <div class="slide-content">
+          <div class="card-wrapper ">
+            <div class="row">
+
+        
+                <div class="col-lg-3 col-sm-6 col-md-4">
+                  <div class="card ">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+          
+                      <div class="card-image">
+                        <img class="card-img" src="../../images/men/shirts/Aqua formal.webp"  alt="">
+                      </div>
+                    </div>
+          
+                    <div class="card-content">
+                      <h2 class="name">Aqua Formal</h2>
+                      <h4 class="name">$15</h4>
+
+                      <p class="description">The lorem text the section that 
+                        contains header with having open functionality Lorem 
+                        dolor sit amet consectetur adipisicing elit.
+                      </p>
+          
+                      <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                  <div class="card ">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+          
+                      <div class="card-image">
+                        <img class="card-img" src="../../images/men/shirts/Blue dotted.webp"  alt="">
+                      </div>
+                    </div>
+          
+                    <div class="card-content">
+                      <h2 class="name">Blue Dotted</h2>
+                      <h4 class="name">$15</h4>
+
+                      <p class="description">The lorem text the section that 
+                        contains header with having open functionality Lorem 
+                        dolor sit amet consectetur adipisicing elit.
+                      </p>
+          
+                      <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="card ">
+                      <div class="image-content">
+                        <span class="overlay"></span>
+            
+                        <div class="card-image">
+                          <img class="card-img" src="../../images/men/shirts/Buy 1 Get 3 Combo.webp"  alt="">
+                        </div>
+                      </div>
+            
+                      <div class="card-content">
+                        <h2 class="name">Buy 1 Get 3 Combo</h2>
+                        <h4 class="name">$15</h4>
+
+                        <p class="description">The lorem text the section that 
+                          contains header with having open functionality Lorem 
+                          dolor sit amet consectetur adipisicing elit.
+                        </p>
+            
+                        <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="card ">
+                      <div class="image-content">
+                        <span class="overlay"></span>
+            
+                        <div class="card-image">
+                          <img class="card-img" src="../../images/men/shirts/Fabric Combo.webp"  alt="">
+                        </div>
+                      </div>
+            
+                      <div class="card-content">
+                        <h2 class="name">Fabric Combo</h2>
+                        <h4 class="name">$15</h4>
+
+                        <p class="description">The lorem text the section that 
+                          contains header with having open functionality Lorem 
+                          dolor sit amet consectetur adipisicing elit.
+                        </p>
+            
+                        <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="col-lg-3 col-sm-6 col-md-4">
+                  <div class="card ">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+          
+                      <div class="card-image">
+                        <img class="card-img" src="../../images/men/shirts/Red Checks.webp"  alt="">
+                      </div>
+                    </div>
+          
+                    <div class="card-content">
+                      <h2 class="name">Red Checks</h2>
+                      <h4 class="name">$15</h4>
+
+                      <p class="description">The lorem text the section that 
+                        contains header with having open functionality Lorem 
+                        dolor sit amet consectetur adipisicing elit.
+                      </p>
+          
+                      <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-md-4">
+                  <div class="card ">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+          
+                      <div class="card-image">
+                        <img class="card-img" src="../../images/men/shirts/Rule Blue.webp"  alt="">
+                      </div>
+                    </div>
+          
+                    <div class="card-content">
+                      <h2 class="name">Rule Blue</h2>
+                      <h4 class="name">$15</h4>
+
+                      <p class="description">The lorem text the section that 
+                        contains header with having open functionality Lorem 
+                        dolor sit amet consectetur adipisicing elit.
+                      </p>
+          
+                      <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                    </div>
+                  </div>
+                </div>
+
+                
+                
+                
+
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                  <div class="card ">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+          
+                      <div class="card-image">
+                        <img class="card-img" src="../../images/men/shirts/Buy 1 Get 3 Combo.webp"  alt="">
+                      </div>
+                    </div>
+          
+                    <div class="card-content">
+                      <h2 class="name">Buy 1 Get 3 Combo</h2>
+                      <h4 class="name">$15</h4>
+
+                      <p class="description">The lorem text the section that 
+                        contains header with having open functionality Lorem 
+                        dolor sit amet consectetur adipisicing elit.
+                      </p>
+          
+                      <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                    </div>
+                  </div>
+                </div>
+        
+
+                <div class="col-lg-3 col-sm-6 col-md-4">
+                  <div class="card ">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+          
+                      <div class="card-image">
+                        <img class="card-img" src="../../images/men/shirts/Aqua formal.webp"  alt="">
+                      </div>
+                    </div>
+          
+                    <div class="card-content">
+                      <h2 class="name">Aqua Formal</h2>
+                      <h4 class="name">$15</h4>
+
+                      <p class="description">The lorem text the section that 
+                        contains header with having open functionality Lorem 
+                        dolor sit amet consectetur adipisicing elit.
+                      </p>
+          
+                      <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                  <div class="card ">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+          
+                      <div class="card-image">
+                        <img class="card-img" src="../../images/men/shirts/Fabric Combo.webp"  alt="">
+                      </div>
+                    </div>
+          
+                    <div class="card-content">
+                      <h2 class="name">Fabric Combo</h2>
+                      <h4 class="name">$15</h4>
+
+                      <p class="description">The lorem text the section that 
+                        contains header with having open functionality Lorem 
+                        dolor sit amet consectetur adipisicing elit.
+                      </p>
+          
+                      <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                  <div class="card ">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+          
+                      <div class="card-image">
+                        <img class="card-img" src="../../images/men/shirts/White Red Combo.webp"  alt="">
+                      </div>
+                    </div>
+          
+                    <div class="card-content">
+                      <h2 class="name">White Red Combo</h2>
+                      <h4 class="name">$15</h4>
+
+                      <p class="description">The lorem text the section that 
+                        contains header with having open functionality Lorem 
+                        dolor sit amet consectetur adipisicing elit.
+                      </p>
+          
+                      <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                  <div class="card ">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+          
+                      <div class="card-image">
+                        <img class="card-img" src="../../images/men/shirts/Red Shirt.webp"  alt="">
+                      </div>
+                    </div>
+          
+                    <div class="card-content">
+                      <h2 class="name">Red Shirt</h2>
+                      <h4 class="name">$15</h4>
+
+                      <p class="description">The lorem text the section that 
+                        contains header with having open functionality Lorem 
+                        dolor sit amet consectetur adipisicing elit.
+                      </p>
+          
+                      <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                    </div>
+                  </div>
+                </div>
+        
+                  <div class="col-lg-3 col-sm-6 col-md-4">
+                    <div class="card ">
+                      <div class="image-content">
+                        <span class="overlay"></span>
+            
+                        <div class="card-image">
+                          <img class="card-img" src="../../images/men/shirts/Rule Blue.webp"  alt="">
+                        </div>
+                      </div>
+            
+                      <div class="card-content">
+                        <h2 class="name">Rule Blue</h2>
+                        <h4 class="name">$15</h4>
+  
+                        <p class="description">The lorem text the section that 
+                          contains header with having open functionality Lorem 
+                          dolor sit amet consectetur adipisicing elit.
+                        </p>
+            
+                        <a href="../pages/cart.html"><button class="btn btn-outline-warning"> <i class="cart fa fa-shopping-cart "> </i> Add to cart</button></a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+    <div id="footer"></div>
+    
+</body>
+</html>
