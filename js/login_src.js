@@ -5,6 +5,6 @@ function validate(form) {
     if (userName == "admin@admin.com" && password == "123456") {
         window.location.href = "../../pages/regular_pages/success.html";
     }else{
-
+        alert("Email or password is incorrect!");
     }
 }
