@@ -18,8 +18,8 @@
     ></script>
     <script>
       $(function () {
-        $("#header").load("../components/header.html");
-        $("#footer").load("../components/footer.html");
+        $("#header").load("./header.html");
+        $("#footer").load("./footer.html");
       });
     </script>
   </head>
@@ -27,7 +27,7 @@
     <div id="header"></div>
 
     <!--Remaining section-->
-    <div class="cover">
+    <div class="cover" style="position: relative !important">
       <img
         class="cover-image"
         src="images/1.webp"
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <section class="featured-products">
+    <section class="featured-products" style="background-color: #ffffff">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -94,21 +94,24 @@
         </div>
 
         <h1
+          class="h1 bg-warning"
           style="
             text-align: center;
-            background-color: #ffc107;
-            margin-top: 1px;
+            font-family: 'Courier New', Courier, monospace;
+            /* background-color: #313131; */
+            border-bottom: 6px dashed white;
+            border-top: 10px groove rgb(218, 169, 12);
             padding: 10px;
             font-weight: bold;
+            text-shadow: 2px 2px 4px rgb(242, 167, 17);
             color: #ffffff;
-            border: 4px dashed rgb(255, 255, 255);
           "
         >
           Featured Products
         </h1>
 
-        <div class="carousel-inner" style="margin-top: -7px">
-          <div class="carousel-item active p-4">
+        <div class="carousel-inner slider">
+          <div class="carousel-item active active-rm">
             <div class="row p-5 rows">
               <div class="col-lg-3 col-sm-12 col-md-6">
                 <div class="card">
@@ -238,7 +241,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item p-4">
+          <div class="carousel-item active-rm">
             <div class="row p-5 rows">
               <div class="col-lg-3 col-sm-12 col-md-6">
                 <div class="card">
@@ -368,7 +371,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item p-4">
+          <div class="carousel-item active-rm align-content-center">
             <div class="row p-5 rows">
               <div class="col-lg-3 col-sm-12 col-md-6">
                 <div class="card">
@@ -504,6 +507,8 @@
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
+          style="color: black !important"
+          ;
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -518,6 +523,8 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <br />
+      <br />
     </section>
 
     <div id="footer"></div>

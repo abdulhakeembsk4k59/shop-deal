@@ -30,7 +30,7 @@ a{
 
 .cover-content {
   position: absolute;
-  top: 60%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -123,6 +123,8 @@ Featured Products
 
 }
 .card{
+  position: relative;
+  left: 25px !important;
   width: 290px;
   border-radius: 25px !important;
   background-color: #FFF;
@@ -203,6 +205,39 @@ Featured Products
   background: #6d5e32;
 }
 
+.active-rm{
+  border: none !important; 
+  background-color: #ffffff !important;
+}
+
+.slider{
+  background-color: #ffffff !important;
+  margin-top: 0;
+  /* margin-bottom: 35px !important;  */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  /* max-width: 1696px; */
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -217,6 +252,7 @@ Featured Products
     }
 
     .card{
+      position: relative;
       width: 230px;
       border-radius: 25px !important;
       background-color: #FFF;
@@ -265,13 +301,7 @@ Featured Products
 
 
 @media only screen and (max-width: 990px) {
-  .cover-content {
-    position: absolute;
-    top: 59%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+  
   .shop-now{
     font-size: 4vw !important;
     border-top-left-radius: 30px !important;
@@ -349,13 +379,7 @@ Featured Products
 
 
 @media only screen and (max-width: 750px) {
-  .cover-content {
-    position: absolute;
-    top: 59%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+
   .shop-now{
     font-size: 4vw !important;
     border-top-left-radius: 30px !important;
@@ -418,46 +442,9 @@ Featured Products
 
 
 
-@media only screen and (max-width: 650px) {
-  .cover-content {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .shop-now{
-    font-size: 4vw !important;
-    border-top-left-radius: 30px !important;
-    border-bottom-right-radius: 30px!important;
-  }
-  #f-shop{
-    font-size: 4vw !important;
-    padding-left: 3px;
-  }
+@media only screen and (max-width: 664px) {
 
-  #logo-container2 {
-    position: relative;
-    width: 100%;
-    height: 18vw ;
-    /* background-color: #ff6600; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    overflow: hidden;
-    margin-bottom: 0px;
-  }
-  .logo-letter2 {
-    position: relative;
-    font-family: 'Kablammo', cursive;
-    font-size: 10vw;
-    font-weight: bold;
-    color: white;
-    animation: letter-bounce 1s ease-in-out infinite alternate;
-    text-shadow: 2px 2px 4px rgb(228, 189, 80);
-  /* margin-bottom: 20px; */
-  }
+ 
   .slogan {
     position: relative;
     bottom: 20px;
@@ -483,58 +470,21 @@ Featured Products
       margin: 0 !important;
       padding: 0%!important;
     }
-}
-
-
-@media only screen and (max-width: 450px) {
-  .cover-content {
-    position: absolute;
-    top: 59%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .shop-now{
-    font-size: 4vw !important;
-    border-top-left-radius: 30px !important;
-    border-bottom-right-radius: 30px!important;
-  }
-  #f-shop{
-    font-size: 4vw !important;
-    padding-left: 3px;
-  }
-
-  #logo-container2 {
-    position: relative;
-    width: 100%;
-    height: 18vw ;
-    /* background-color: #ff6600; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    overflow: hidden;
-    margin-bottom: 0px;
-  }
-  .logo-letter2 {
-    position: relative;
-    font-family: 'Kablammo', cursive;
-    font-size: 10vw;
-    font-weight: bold;
-    color: white;
-    animation: letter-bounce 1s ease-in-out infinite alternate;
-    text-shadow: 2px 2px 4px rgb(228, 189, 80);
-  /* margin-bottom: 20px; */
-  }
-  .slogan {
-    position: relative;
-    bottom: 20px;
-    font-family: 'Pacifico', cursive;
-    color: white;
-    font-size: 3vw;
-    text-shadow: 2px 2px 4px rgb(88, 0, 0);
+    
 
 }
+
+
+
+@media only screen and (max-width: 420px) {
+  .card{
+    position: relative;
+    right: auto !important;
+    left: -10px !important;
+  }
+}
+@media only screen and (max-width: 392px) {
+
 
     .cover-image {
       width: 100%;
@@ -552,8 +502,149 @@ Featured Products
       padding: 0 !important;
     }
     .card{
-      posintion:relative;
-      right: 56px;
+      position: relative;
+      /* right: auto !important; */
+      left: -25px !important;
     }
 }
 
+
+@media only screen and (max-width: 769px) {
+  .card{
+    position: relative;
+    /* right: auto !important; */
+    left: 155px !important;
+  }
+}
+
+@media only screen and (max-width: 748px) {
+  .card{
+    position: relative;
+    /* right: auto !important; */
+    left: 75px !important;
+  }
+}
+
+@media only screen and (max-width: 721px) {
+  .card{
+    position: relative;
+    /* right: auto !important; */
+    left: 65px !important;
+  }
+}
+@media only screen and (max-width: 701px) {
+  .card{
+    position: relative;
+    /* right: auto !important; */
+    left: 52px !important;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .card{
+    position: relative;
+    
+    left: 102px !important;
+  }
+}
+@media only screen and (max-width: 611px) {
+  .card{
+    position: relative;
+    
+    left: 82px !important;
+  }
+}
+@media only screen and (max-width: 584px) {
+  .card{
+    position: relative;
+    
+    left: 72px !important;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .card{
+    position: relative;
+    
+    left: 62px !important;
+  }
+}
+@media only screen and (max-width: 524px) {
+  .card{
+    position: relative;
+    
+    left: 48px !important;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .card{
+    position: relative;
+    
+    left: 32px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card{
+    position: relative;
+    
+    left: 22px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .card{
+    position: relative;
+    right: auto !important;
+    left: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 457px) {
+  .card{
+    position: relative;
+    right: auto !important;
+    left: 0px !important;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .card{
+    position: relative;
+    right: auto !important;
+    left: -10px !important;
+  }
+}
+@media only screen and (max-width: 405px) {
+  .card{
+    position: relative;
+    right: auto !important;
+    left: -20px !important;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .card{
+    position: relative;
+    right: auto !important;
+    left: -30px !important;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .card{
+    position: relative;
+    right: auto !important;
+    left: -38px !important;
+  }
+}
+@media only screen and (max-width: 353px) {
+  .card{
+    position: relative;
+    right: auto !important;
+    left: -45px !important;
+  }
+}
+@media only screen and (max-width: 335px) {
+  .card{
+    position: relative;
+    right: auto !important;
+    left: -55px !important;
+  }
+}
