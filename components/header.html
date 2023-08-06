@@ -111,7 +111,7 @@
         #w-dropdown-menu {
           display: none;
         }
-        #m-dropdown-menu{
+        #m-dropdown-menu {
           display: none;
         }
       }
@@ -229,7 +229,7 @@
 
               <!-- Women -->
               <li
-                class="nav-item dropdown " 
+                class="nav-item dropdown"
                 id="w-dropdown"
                 onclick="w_dropdownClick()"
               >
@@ -245,7 +245,7 @@
                   Women
                 </a>
                 <ul
-                  class="dropdown-menu "
+                  class="dropdown-menu"
                   id="w-dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
@@ -279,7 +279,8 @@
               </li>
 
               <!-- men -->
-              <li class="nav-item dropdown "
+              <li
+                class="nav-item dropdown"
                 id="m-dropdown"
                 onclick="m_dropdownClick()"
               >
@@ -294,7 +295,7 @@
                   Men
                 </a>
                 <ul
-                  class="dropdown-menu "
+                  class="dropdown-menu"
                   id="m-dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
@@ -376,19 +377,19 @@
       }
       let cnt = 0;
       function w_dropdownClick() {
-        cnt=cnt+1;
-        if(cnt%2!=0){
-          document.getElementById("w-dropdown-menu").style.display="block";
-        }else{
-          document.getElementById("w-dropdown-menu").style.display="none";
+        cnt = cnt + 1;
+        if (cnt % 2 != 0) {
+          document.getElementById("w-dropdown-menu").style.display = "block";
+        } else {
+          document.getElementById("w-dropdown-menu").style.display = "none";
         }
       }
       function m_dropdownClick() {
-        cnt=cnt+1;
-        if(cnt%2!=0){
-          document.getElementById("m-dropdown-menu").style.display="block";
-        }else{
-          document.getElementById("m-dropdown-menu").style.display="none";
+        cnt = cnt + 1;
+        if (cnt % 2 != 0) {
+          document.getElementById("m-dropdown-menu").style.display = "block";
+        } else {
+          document.getElementById("m-dropdown-menu").style.display = "none";
         }
       }
     </script>
